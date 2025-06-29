@@ -10,9 +10,39 @@ const Contact = () =>{
         </div>
         <div className="ContainerForm">
             <div className="leftSide">
+
                 <div className="realForm">
-                    <p>a</p>
+                    <div className="formContainer">
+                        <div className="title_form_C">
+                            <p>Send Message</p>
+                            <p>Online</p>
+                        </div>
+                        <div className="fistForm">
+                            <div>
+                                <form action="">
+                                    <label htmlFor="Nombe">Name</label>
+                                    <input type="text" placeholder="Enter your name" name="Name" />
+                                </form>
+                            </div>
+                            <div>
+                                <form action="">
+                                    <label htmlFor="Nombe">Email</label>
+                                    <input type="text" placeholder="Enter your email" name="Name" />
+                                </form>
+                            </div>
+                        </div>
+                        <div className="secondForm">
+
+                        </div>
+                        <div className="thirdForm">
+
+                        </div>
+                        <div className="buttomForm">
+
+                        </div>
+                    </div>
                 </div>
+
                 <div className="conect">
                     <div className="container-c">
                         <div className="titleC">
