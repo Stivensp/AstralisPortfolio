@@ -1,0 +1,19 @@
+:root {
+  --ColorPrimary:#2F122E;
+  --ColorSecundary:#09050D;
+  --ColorOneDegrade:#B489C2;
+  --ColorTwoDegrade:#FC8383;
+  --ColorCuestionaryDiv:#180C40;
+  --ColorFeatureConectDiv:#170825;
+  --DivDown:#180C40;
+  --ColorGreen:#00FFA5;
+  --ColorOrange:#CB7F65;
+  --ColorLettersWhiteDif:#ffffff2f;
+  --Fuente: "Trium", serif;
+}
+
+@font-face {
+  font-family: 'Trium';
+  src: url('./Fonts/Trium.otf') format('opentype'),
+       url('./Fonts/Trium.otf') format('opentype');
+}
