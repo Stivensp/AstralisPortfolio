@@ -8,7 +8,7 @@
   --DivDown:#180C40;
   --ColorGreen:#00FFA5;
   --ColorOrange:#CB7F65;
-  --ColorLettersWhiteDif:#ffffff2f;
+  --ColorLettersWhiteDif:#ffffff21;
   --Fuente: "Trium", serif;
 }
 
@@ -16,4 +16,7 @@
   font-family: 'Trium';
   src: url('./Fonts/Trium.otf') format('opentype'),
        url('./Fonts/Trium.otf') format('opentype');
+}
+form {
+  all: unset;
 }
