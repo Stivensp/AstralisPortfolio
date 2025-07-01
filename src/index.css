@@ -20,3 +20,32 @@
 form {
   all: unset;
 }
+/* Ancho del scroll */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Fondo del track */
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 10px;
+}
+
+/* Barra del scroll */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #aa87c9,
+    #d58aba,
+    #f77c83,
+    #f8a173,
+    #ffd395
+  );;
+  border-radius: 10px;
+}
+
+/* Hover en el scroll */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ColorPrimary);
+}

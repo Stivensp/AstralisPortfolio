@@ -1,0 +1,135 @@
+.main_about{
+    width: 100%;
+    height: 130vh;
+    background-color: var(--ColorPrimary);
+    position: relative;
+}
+
+.image-background-about{
+    margin-top: 5px;
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    object-fit: cover;
+  opacity: 0.80; /* 50% de transparencia */
+      filter: blur(3px); /* 🔥 Desenfoque */
+}
+
+#img_top_about{
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    transform: rotate(180deg);   
+}
+#img_down_about{
+width: 100%;
+position: absolute;
+bottom: 50px;
+}
+.Container-Co{
+position: absolute;
+width: 60%;
+height: 850px;    
+
+top: 48%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+.aboutLeft{
+width: 50%;
+height: 100%;
+ 
+display: flex;
+align-items: center;
+justify-content: center; 
+}
+.aboutRight{
+width: 50%;
+height: 100%;
+
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+align-items: center;
+}
+.me{
+ height: 93.3%;
+ width: 95%;   
+  background: linear-gradient(
+    to bottom,
+    #180C3F,
+    #180C3F,
+    #231145,
+    #30175E,
+    #30175E
+  );
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.C-down{
+  background: linear-gradient(
+    to bottom,
+    #180C3F,
+    #180C3F,
+    #231145,
+    #30175E,
+    #30175E
+  );
+width: 95%;
+height: 45%;
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+/*-----------------------------*/
+.C-up{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    #180C3F,
+    #180C3F,
+    #231145,
+    #30175E,
+    #30175E
+  );
+width: 95%;
+height: 45%;
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.C-up_Title{
+width: 100%;
+height: 25%;
+background-color: aqua;
+}
+.C-up_Container{
+width: 100%;
+height: 60%;
+background-color: aqua;
+}
+.C-up_Arrow{
+width: 100%;
+height: 15%;
+background-color: aqua;
+}
+/**----------------------------*/
+.C-down_Title{
+width: 100%;
+height: 25%;
+background-color: aqua;
+}
+.C-down_Container{
+width: 100%;
+height: 60%;
+background-color: aqua;
+}
+.C-down_Arrow{
+width: 100%;
+height: 15%;
+background-color: aqua;
+}

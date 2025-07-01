@@ -1,0 +1,44 @@
+.main_skills{
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    background-color: var(--ColorPrimary);
+
+}
+.image-background-skills{
+    margin-top: 50px;
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(1);
+    filter: blur(3px); /* 🔥 Desenfoque */
+}
+
+#img_top_skills{
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 2;   
+}
+#img_down_skills{
+width: 100%;
+position: absolute;
+bottom: 48px;
+z-index: 2;
+}
+#Rock{
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+}
+#pc{
+    position: absolute;
+    bottom: 115px;
+    z-index: 1;
+    left: -45px;
+    width:100% ;
+
+}

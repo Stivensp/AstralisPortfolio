@@ -14,31 +14,50 @@ const Contact = () =>{
                 <div className="realForm">
                     <div className="formContainer">
                         <div className="title_form_C">
+                            <div className="childOne">
+                            <img src="..\Assets\Icons\chat_bubble.png" alt="" />
                             <p>Send Message</p>
+                            </div>
+                            <div className="childTwo">
+                            <img src="..\Assets\Icons\wifi.png" alt="" />
                             <p>Online</p>
+                            </div>
                         </div>
                         <div className="fistForm">
                             <div>
                                 <form action="">
                                     <label htmlFor="Nombe">Name</label>
-                                    <input type="text" placeholder="Enter your name" name="Name" />
+                                    <input className="inputuno" type="text" placeholder="Enter your name" name="Name" />
                                 </form>
                             </div>
                             <div>
-                                <form action="">
+                                <form  action="">
                                     <label htmlFor="Nombe">Email</label>
-                                    <input type="text" placeholder="Enter your email" name="Name" />
+                                    <input className="inputuno" type="text" placeholder="Enter your email" name="Name" />
                                 </form>
                             </div>
                         </div>
                         <div className="secondForm">
-
+                            <div className="Container_subject">
+                               <form action="">
+                                    <label id="Subject" htmlFor="Nombe">Subject</label>
+                                    <input className="inputdos" type="text" placeholder="Project discussion" name="Name" />
+                                </form>  
+                            </div>
                         </div>
                         <div className="thirdForm">
-
+                            <div className="ContainerMessage">
+                               <form action="">
+                                    <label id="Message" htmlFor="Nombe">Message</label>
+                                    <textarea className="inputtres" type="text" placeholder="Tell me about your project..." name="Name" />
+                                </form>  
+                            </div>
                         </div>
                         <div className="buttomForm">
-
+                            <button id="buttomsend">
+                                <p>Send Message</p>
+                                <img src="..\Assets\Icons\send.png" alt="" />
+                            </button>
                         </div>
                     </div>
                 </div>

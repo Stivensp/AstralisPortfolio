@@ -1,0 +1,17 @@
+.main_home{
+    width: 100%;
+    height: 130vh;
+    position: relative;
+}
+.container_home{
+  width: 100%;
+  height: 130vh;
+  background: linear-gradient(
+    to bottom,
+    #aa87c9,
+    #d58aba,
+    #f77c83,
+    #f8a173,
+    #ffd395
+  );
+}

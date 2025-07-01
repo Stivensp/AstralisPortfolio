@@ -6,10 +6,12 @@
 }
 
 .image-self{
+    margin-top: 5px;
     width: 100%;
     height: 115vh;
     position: absolute;
     object-fit: cover;
+        filter: blur(3px); /* 🔥 Desenfoque */
 }
 
 /*Imagen Div*/
@@ -79,15 +81,52 @@ font-family: var(--Fuente);
 .title_form_C{
 width: 100%;
 height: 8%;
-background-color: rgb(0, 4, 255);
 display: flex;
 align-content: center;
 flex-direction: row;
 justify-content: space-between;
-padding-left: 15px;
-padding-right: 15px;
+padding-left: 10px;
+padding-right: 10px;
 font-family:var(--Fuente);
+
+
 }
+.childTwo > p{
+color: var(--ColorGreen);
+    font-size: 12px;   
+}
+.childOne > p{
+background: linear-gradient(180deg, #B489C2, #fc7979);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+font-size: 21px;    
+}
+.childTwo > img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+     
+}
+.childOne > img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.childOne{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.childTwo{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*First fomr*/
 .fistForm{
 width: 100%;
 height: 18%;
@@ -103,41 +142,111 @@ flex-direction: row;
     display: flex;
     align-items: center;
 }
-input{
-    margin-top: 10px;
-    width: 100%;
-    height: 35px;
-    border-radius: 5px;
-    background-color: var(--ColorFeatureConectDiv);
-    border-color: #ffffff27;
-    padding-left: 15px;
-    font-family: var(--Fuente);
-    color: var(--ColorLettersWhiteDif);
-
+.inputuno{
+margin-top: 10px;
+width: 100%;
+height: 35px;
+border-radius: 5px;
+background-color: var(--ColorFeatureConectDiv);
+border-color: #ffffffd0;
+padding-left: 15px;
+font-family: var(--Fuente);
+color: var(--ColorLettersWhiteDif);
+outline: none; 
 }
+
 label{
 margin-bottom: 30px;
-margin-left: 5px;
+margin-left: px;
 background: linear-gradient(180deg, #B489C2, #fc7979);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
 color: transparent;    
 }
+/*Second Forma*/
+
 .secondForm{
 width: 100%;
 height: 20%;
-background-color: rgb(195, 0, 255);
+
+display: flex;
+align-items: center;
+justify-content: center;
 }
+.Container_subject{
+    width: 100%;
+    height: 90%;
+
+}
+.inputdos{
+margin-top: 5px;
+width: 100%;
+height: 60px;
+border-radius: 5px;
+background-color: var(--ColorFeatureConectDiv);
+border-color: #ffffffd0;
+padding-left: 15px;
+font-family: var(--Fuente);
+color: var(--ColorLettersWhiteDif);
+outline: none;     
+}
+#Subject{
+margin-left: 8px;    
+}
+/*Second Forma*/
+
+
+/*Third Form*/
 .thirdForm{
 width: 100%;
 height: 35%;
-background-color: rgb(0, 255, 42);
+display: flex;
+align-items: center;
+justify-content: center;
 }
+.ContainerMessage{
+width: 100%;
+height: 100%;
+}
+#Message{
+margin-left: 10px;
+}
+.inputtres{
+margin-top: 10px;
+width: 100%;
+height: 140px;
+border-radius: 5px;
+background-color: var(--ColorFeatureConectDiv);
+border-color: #ffffffd0;
+padding-left: 15px;
+padding-top: 10px;
+font-family: var(--Fuente);
+color: var(--ColorLettersWhiteDif);
+outline: none;  
+resize: none;     
+}
+/*Buttom Form*/
 .buttomForm{
 width: 100%;
 height: 15%;
-background-color: rgb(255, 72, 0);
+
+}
+#buttomsend{
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 7px;
+    height: 88%;
+    background-color: aqua;
+    font-family: var(--Fuente);
+    background: linear-gradient(90deg, #B489C2, #fc7979);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
 }
 /*Conect*/
 .conect{
