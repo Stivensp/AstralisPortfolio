@@ -8,10 +8,17 @@
   --DivDown:#180C40;
   --ColorGreen:#00FFA5;
   --ColorOrange:#CB7F65;
-  --ColorLettersWhiteDif:#ffffff21;
+  --ColorLettersWhiteDif:#ffffff61;
   --Fuente: "Trium", serif;
-}
 
+}
+.dsad{
+background: linear-gradient(180deg, #B489C2, #fc7979);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+}
 @font-face {
   font-family: 'Trium';
   src: url('./Fonts/Trium.otf') format('opentype'),
@@ -41,7 +48,7 @@ form {
     #f77c83,
     #f8a173,
     #ffd395
-  );;
+  );
   border-radius: 10px;
 }
 

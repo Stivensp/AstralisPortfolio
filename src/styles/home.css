@@ -1,11 +1,11 @@
 .main_home{
     width: 100%;
-    height: 130vh;
+    height: 1200px;
     position: relative;
 }
 .container_home{
   width: 100%;
-  height: 130vh;
+  height: 1200px;
   background: linear-gradient(
     to bottom,
     #aa87c9,
@@ -14,4 +14,133 @@
     #f8a173,
     #ffd395
   );
+  position: relative;
+  z-index: -1;
+}
+#Logo{
+  width:480px ;
+  height:480px ;
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+#Mountain-Right{
+  width: 100%;
+z-index: 2;
+position: absolute;
+top: 46%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#Mountain-left{
+  width: 100%;
+z-index: 1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#Rock{
+  z-index: 4;
+}
+/*Clouds*/
+#Cloud_Left{
+  width: 32%;
+z-index: 3;
+position: absolute;
+top: 30%;
+left: 350px; 
+}
+#Cloud_Left_up{
+    width: 40%;
+z-index: 1;
+position: absolute;
+top: 3%;
+left: 10%;
+}
+#Cloud_Left_Top{
+    width: 32%;
+z-index: 1;
+position: absolute;
+top: 0;
+right: 0;
+}
+#Cloud_Right_Middle{
+    width: 36%;
+z-index: 1;
+position: absolute;
+top: 13%;
+right: 11%;
+}
+#Cloud_Right_Down{
+  width: 25%;
+z-index: 1;
+position: absolute;
+top: 40%;
+right: 18%;  
+}
+#Cloud_Up{
+    width: 60%;
+z-index: 1;
+position: absolute;
+top: 0;
+right: 0;
+}
+
+/*Grasses*/
+#Grass_Right{
+width: 100%;  
+z-index: 2;
+position: absolute;
+bottom: 10%;
+right: 0px;
+}
+#Grass_Left{
+width: 100%;
+z-index: 2;
+position: absolute;
+bottom:10%;
+left: 0px;
+}
+#Sun{
+z-index: 2;
+position: absolute;
+top: 0;
+right: 0;  
+}
+/*Tapon*/
+#Tapon-Right{
+    width: 85%;
+z-index: 0;
+position: absolute;
+top: 50%;
+left: 48%;
+transform: translate(-50%, -50%);    
+}
+#Tapon-Left{
+  width: 70%;
+z-index: 1;
+position: absolute;
+top: 53%;
+left: 48%;
+transform: translate(-50%, -50%);   
+}
+#Mountain-left_tap{
+  width: 100%;
+z-index: 0;
+position: absolute;
+top: 55%;
+left: 50%;
+transform: translate(-50%, -50%);  
+}
+#Poste{
+  z-index: 3;
+  width: 90%;
+position: absolute;
+bottom: -30%;
+left: 50%;
+transform: translate(-50%, -50%);   
 }

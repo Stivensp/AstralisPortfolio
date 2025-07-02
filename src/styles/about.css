@@ -30,7 +30,7 @@ bottom: 50px;
 .Container-Co{
 position: absolute;
 width: 60%;
-height: 850px;    
+height: 825px;    
 
 top: 48%;
 left: 50%;
@@ -38,6 +38,7 @@ transform: translate(-50%, -50%);
 display: flex;
 justify-content: center;
 flex-direction: row;
+
 }
 .aboutLeft{
 width: 50%;
@@ -105,31 +106,134 @@ height: 45%;
 .C-up_Title{
 width: 100%;
 height: 25%;
-background-color: aqua;
+background: linear-gradient(180deg, #bf8fcf, #ff8080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+font-family: var(--Fuente);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 48px;
 }
 .C-up_Container{
 width: 100%;
 height: 60%;
-background-color: aqua;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .C-up_Arrow{
 width: 100%;
 height: 15%;
-background-color: aqua;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#btn_left_About{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-left: 25px;
+  background-color: var(--ColorFeatureConectDiv);
+  color: white;
+}
+#btn_right_About{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  background-color: var(--ColorFeatureConectDiv);
+  color: white;
+}
+.Contenedor-Educational_up{
+  width: 85%;
+  height: 95%;
+  background-color: #bf8fcf;
+  border-radius: 5px;
 }
 /**----------------------------*/
 .C-down_Title{
 width: 100%;
 height: 25%;
-background-color: aqua;
+background: linear-gradient(180deg, #bf8fcf, #ff8080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+font-family: var(--Fuente);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 48px;
 }
 .C-down_Container{
 width: 100%;
 height: 60%;
-background-color: aqua;
+display: flex;
+align-items: center;
+justify-content: center;
 }
+
 .C-down_Arrow{
 width: 100%;
 height: 15%;
-background-color: aqua;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/*--------------------------------*/
+.Contenedor-Educational_down{
+  width: 65%;
+  height: 95%;
+  background-color: #170A31;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--Fuente);
+}
+.C_educational_img{
+width: 45%;
+height: 40%;  
+background-color: #0b0bff;
+display: flex;
+align-items: center;
+justify-items: center;
+}
+.C_educational_title{
+width: 80%;
+height: 15%;
+font-size: 25px;  
+
+display: flex;
+align-items: center;
+justify-items: center;
+background: linear-gradient(180deg, #bf8fcf, #ff8080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+}
+.C_educational_apply{
+width: 80%;
+height: 15%;  
+color: var(--ColorLettersWhiteDif);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.C_educational_des{
+
+padding-left: 5px;
+border-left: 2px solid var(--ColorGreen); /* Borde izquierdo verde */
+width: 80%;
+height: 25%;  
+color: white;
+display: flex;
+align-items: center;
+justify-items: center;
 }
