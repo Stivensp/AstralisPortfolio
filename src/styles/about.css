@@ -152,9 +152,18 @@ justify-content: center;
 .Contenedor-Educational_up{
   width: 85%;
   height: 95%;
-  background-color: #bf8fcf;
+  background-color: #8fcf8f;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.C_Up_Educational{
+  background-color: aqua;
+  width: 98%;
+  height: 95%;
+  border-radius: 10px;
+  }
 /**----------------------------*/
 .C-down_Title{
 width: 100%;
@@ -199,10 +208,10 @@ justify-content: center;
 .C_educational_img{
 width: 45%;
 height: 40%;  
-background-color: #0b0bff;
+
 display: flex;
 align-items: center;
-justify-items: center;
+justify-content: center;
 }
 .C_educational_title{
 width: 80%;
@@ -237,3 +246,14 @@ display: flex;
 align-items: center;
 justify-items: center;
 }
+
+.logo_empresa{
+  border-radius: 10px;
+  width: 50%;
+  height: 80%;
+
+}
+.logo_empresa > img {
+  width: 69px;
+}
+

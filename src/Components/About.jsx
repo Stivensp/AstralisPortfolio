@@ -20,7 +20,9 @@ const About =() =>{
                         </div>
                         <div className="C-up_Container">
                             <div className="Contenedor-Educational_up">
-                                <p>-</p>
+                                <div className="C_Up_Educational">
+                                    
+                                </div>
                             </div>
                         </div>
                         <div className="C-up_Arrow">
@@ -35,7 +37,9 @@ const About =() =>{
                         <div className="C-down_Container">
                             <div className="Contenedor-Educational_down">
                                 <div className="C_educational_img">
-                                    <p>sa</p>
+                                    <div className="logo_empresa">
+                                        <img src="../Assets/Icons/Box.png" alt="" />
+                                    </div>
                                 </div>
                                 <div className="C_educational_title">
                                     <p>Junior Frontend Developer</p>
