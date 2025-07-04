@@ -21,7 +21,27 @@ const About =() =>{
                         <div className="C-up_Container">
                             <div className="Contenedor-Educational_up">
                                 <div className="C_Up_Educational">
-                                    
+                                    <div className="About_1">
+                                        <img src="\Assets\Icons\book.png" alt="" />
+                                        <p>Secondary School Certificate</p>
+                                    </div>
+                                    <div className="About_2">
+                                       
+                                        <p>Natore Textile Institute</p>                                        
+                                    </div>
+                                    <div className="About_3">
+                                        <p>2019 - 2020</p>
+                                    </div>
+                                    <div className="About_4">
+                                        <p>Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies</p>
+                                    </div>
+                                    <div className="About_5">
+                                        <img src="\Assets\Icons\award.png" alt="" />                                         
+                                        <p>Key Archievement</p>
+                                    </div>
+                                    <div className="About_6">
+                                        <p></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
