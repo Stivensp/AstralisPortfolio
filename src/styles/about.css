@@ -58,6 +58,10 @@ flex-direction: column;
 align-items: center;
 }
 .me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
  height: 93.3%;
  width: 95%;   
   background: linear-gradient(
@@ -330,7 +334,73 @@ color: white;
 .About_6{
 height: 16.6%;
 width: 85%;
+}
 
+.C_me{
+  width: 70%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.C_me_title > h1{
+background: linear-gradient(180deg, #bf8fcf, #ff8080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
 }
 
 
+.C_me_title{
+width: 100%;
+height: 20%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 42px;
+font-family: var(--Fuente);
+}
+.C_me_description{
+width: 100%;
+height: 30%;
+font-size: 25px;
+display: flex;
+padding-bottom: 30px;
+text-align: center;
+color: var(--ColorOrange);
+font-family: var(--Fuente);
+}
+.C_me_pic{
+width: 100%;
+height: 40%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.O_me_circle{
+width: 250px;
+background-color: #090544;
+border-radius: 50%;
+height: 250px;
+}
+.C_me_button{
+width: 100%;
+height: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.C_me_send{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 52px;
+border-radius: 8px;
+background: linear-gradient(90deg, #B489C2, #fc7979);
+font-size: 17px;
+color: white;
+font-family: var(--Fuente);
+}

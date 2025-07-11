@@ -10,7 +10,22 @@ const About =() =>{
             <div className="Container-Co">
                 <div className="aboutLeft">
                     <div className="me">
-                        <p>a</p>
+                        <div className="C_me">
+                            <div className="C_me_title">
+                                <h1>About Me</h1>
+                            </div>
+                            <div className="C_me_description">
+                                <h2>At this stage we can see all my projects at the moment, i hope you enjoy it</h2>
+                            </div>
+                            <div className="C_me_pic">
+                                <div className="O_me_circle">
+
+                                </div>
+                            </div>
+                            <div className="C_me_button">
+                                <button className="C_me_send">Download CV <img src="..\Assets\Icons\send.png" alt="" /></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="aboutRight">
