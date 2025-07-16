@@ -40,5 +40,138 @@ z-index: 2;
     z-index: 1;
     left: -45px;
     width:100% ;
+}
+.name_skills{
+    rotate:0.64deg;
+    font-size: 65px;
+    font-family: var(--Fuente);
+    position: absolute;
+    top: 129px;
+    z-index: 10;
+    left: 39%;
+    translate: (-50% -50%);
+    color: var(--ColorOrange);
+}
+.proffesion_skills{
+    rotate:2.64deg;
+    font-family: var(--Fuente);
+    position: absolute;
+    top: 230px;
+    z-index: 10;
+    left: 34%;
+    translate: (-50% -50%);
+    background: linear-gradient(180deg, #B489C2, #fc7979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 75px;  
+}
 
+.skills_container{
+left: 10%;
+translate: (-50% -50%);
+top: 30%;
+position: absolute;
+
+width: 1540px;
+height: 425px;
+z-index: 10;
+display: flex;
+flex-direction: row;
+}
+.skills1{
+padding-bottom: 25px;
+width: 33.3%;
+height: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.skills2{
+width: 33.3%;
+height: 100%;
+display: flex;
+align-items: start;
+justify-content: center;
+
+}
+.skills3{
+padding-top: 25px;
+width: 33.3%; 
+height: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center; 
+}
+
+.C_skills1{
+    width: 95%;
+    height: 65%;
+    background-color: rgb(182, 16, 16);
+    border-radius: 10px;
+display: flex;
+align-items: center;
+flex-direction: column; 
+}
+.C_skills1_one{
+
+width: 70%;
+height: 40%;
+background-color: #fc7979;
+}
+.C_skills1_two{
+width: 100%;
+height: 50%;
+background-color: #8279fc; 
+ 
+}
+
+.C_skills2{
+width: 95%;
+height: 65%;
+background-color: rgb(0, 38, 255);
+border-radius: 10px;
+display: flex;
+align-items: center;
+flex-direction: column;  
+}
+.C_skills2_one{
+width: 70%;
+height: 40%;
+background-color: #fc7979;
+}
+.C_skills2_two{
+width: 100%;
+height: 50%;
+background-color: #8279fc;   
+}
+
+
+.C_skills3{
+    width: 95%;
+    height: 65%;
+    background-color: rgb(255, 6, 6);
+    border-radius: 10px;
+    display: flex;
+align-items: center;
+flex-direction: column; 
+}
+.C_skills3_one{
+width: 70%;
+height: 40%;
+background-color: #fc7979;
+}
+.C_skills3_two{
+width: 100%;
+height: 50%;
+background-color: #8279fc;    
+}
+
+.C_pic{
+    width: 80px;
+    height: 80px;
+    background-color: #8279fc;
 }
