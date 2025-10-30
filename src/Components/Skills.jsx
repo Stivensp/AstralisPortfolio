@@ -46,7 +46,21 @@ const Skills = () => {
                                         </div>                                        
                                 </div>
                                 <div className="C_skills3_two">
-
+                                        <div className="c_skill3_container_one">
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                               <p>a</p> 
+                                        </div>
                                 </div>
                         </div>
                 </div>
