@@ -3,7 +3,7 @@
     height: 130vh;
     position: relative;
     background-color: var(--ColorPrimary);
-
+    min-width: 100%;
 }
 .image-background-skills{
     margin-top: 50px;
@@ -110,20 +110,27 @@ justify-content: center;
 .C_skills1{
     width: 95%;
     height: 65%;
-    background-color: rgb(182, 16, 16);
+    background-color: #1A0D41;
     border-radius: 10px;
 display: flex;
 align-items: center;
 flex-direction: column; 
+gap: 15px;
 }
 .C_skills1_one{
 
 width: 70%;
 height: 40%;
-background-color: #fc7979;
+    background-color: #1A0D41;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-right: 100px;
+
 }
 .C_skills1_two{
-width: 100%;
+width: 90%;
 height: 50%;
 background-color: #8279fc; 
  
@@ -132,40 +139,54 @@ background-color: #8279fc;
 .C_skills2{
 width: 95%;
 height: 65%;
-background-color: rgb(0, 38, 255);
+    background-color: #1A0D41;
 border-radius: 10px;
 display: flex;
 align-items: center;
 flex-direction: column;  
+gap: 15px;
 }
+
+
+
 .C_skills2_one{
 width: 70%;
 height: 40%;
-background-color: #fc7979;
+    background-color: #1A0D41;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-right: 100px;
 }
 .C_skills2_two{
-width: 100%;
+width: 90%;
 height: 50%;
-background-color: #8279fc;   
+background-color: #79fc9a;   
 }
-
 
 .C_skills3{
     width: 95%;
     height: 65%;
-    background-color: rgb(255, 6, 6);
+    background-color: #1A0D41;
     border-radius: 10px;
     display: flex;
 align-items: center;
 flex-direction: column; 
+gap: 15px;
 }
 .C_skills3_one{
 width: 70%;
 height: 40%;
-background-color: #fc7979;
+    background-color: #1A0D41;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-right: 80px;
 }
 .C_skills3_two{
-width: 100%;
+width: 90%;
 height: 50%;
 background-color: #8279fc;    
 }
@@ -174,4 +195,12 @@ background-color: #8279fc;
     width: 80px;
     height: 80px;
     background-color: #8279fc;
+
+}
+.C_name{
+
+    font-size: 25px;
+    font-family: var(--Fuente);
+    z-index: 10;
+    color: var(--ColorOrange);
 }

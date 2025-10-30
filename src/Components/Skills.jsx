@@ -9,10 +9,10 @@ const Skills = () => {
                         <div className="C_skills1">
                                 <div className="C_skills1_one">
                                         <div className="C_pic">
-
+                                                <img src="" alt="" />
                                         </div>
                                         <div className="C_name">
-                                                
+                                              <p>Frontend <br /> Development</p>  
                                         </div>
                                 </div>
                                 <div className="C_skills1_two">
@@ -24,10 +24,10 @@ const Skills = () => {
                         <div className="C_skills2">
                                 <div className="C_skills2_one">
                                         <div className="C_pic">
-
+                                                <img src="" alt="" />
                                         </div>
                                         <div className="C_name">
-                                                
+                                                <p>Back-end <br /> Development</p>
                                         </div>                                        
                                 </div>
                                 <div className="C_skills2_two">
@@ -42,7 +42,7 @@ const Skills = () => {
 
                                         </div>
                                         <div className="C_name">
-                                                
+                                                <p>Tools  <br />& Technologies</p>
                                         </div>                                        
                                 </div>
                                 <div className="C_skills3_two">
