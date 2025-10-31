@@ -9,14 +9,57 @@ const Skills = () => {
                         <div className="C_skills1">
                                 <div className="C_skills1_one">
                                         <div className="C_pic">
-                                                <img src="" alt="" />
+                                                <img src="/Assets\Icons\Terminal.png" alt="" />
                                         </div>
                                         <div className="C_name">
                                               <p>Frontend <br /> Development</p>  
                                         </div>
                                 </div>
-                                <div className="C_skills1_two">
-
+                                <div className="C_skills3_container">
+                                <div className="C_skills3_two">
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                </div>
+                                <div className="C_skills3_two">
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                </div>
                                 </div>
                         </div>
                 </div>
@@ -24,14 +67,57 @@ const Skills = () => {
                         <div className="C_skills2">
                                 <div className="C_skills2_one">
                                         <div className="C_pic">
-                                                <img src="" alt="" />
+                                                <img src="/Assets\Icons\Database.png" alt="" />
                                         </div>
                                         <div className="C_name">
                                                 <p>Back-end <br /> Development</p>
                                         </div>                                        
                                 </div>
-                                <div className="C_skills2_two">
-
+                                <div className="C_skills3_container">
+                                <div className="C_skills3_two">
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                </div>
+                                <div className="C_skills3_two">
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                </div>
                                 </div>
                         </div>
                 </div>
@@ -39,29 +125,59 @@ const Skills = () => {
                         <div className="C_skills3">
                                 <div className="C_skills3_one">
                                         <div className="C_pic">
-
+                                                <img src="/Assets\Icons\Cpu.png" alt="" />
                                         </div>
                                         <div className="C_name">
-                                                <p>Tools  <br />& Technologies</p>
+                                                <p>Tools & <br /> Technologies</p>
                                         </div>                                        
+                                </div>
+                                <div className="C_skills3_container">
+                                <div className="C_skills3_two">
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>                                                
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
+                                        <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
+                                               <p>a</p> 
+                                        </div>
                                 </div>
                                 <div className="C_skills3_two">
                                         <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
                                                <p>a</p> 
                                         </div>
                                         <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
                                                <p>a</p> 
                                         </div>
                                         <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
                                                <p>a</p> 
                                         </div>
                                         <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
                                                <p>a</p> 
                                         </div>
                                         <div className="c_skill3_container_one">
+                                                <div className="m_pic"></div>
                                                <p>a</p> 
                                         </div>
                                 </div>
+                                </div>
+
                         </div>
                 </div>
             </div>

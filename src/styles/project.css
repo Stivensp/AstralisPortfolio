@@ -61,12 +61,154 @@ left: 33%;
   }
 }
 
-.project_C_slice{
-  width: 95%;
-  height: 50%;
-  position: absolute;
 
+.container_project_ef{
+  width: 700px;
+  height: 300px;
+  background-color: aquamarine;
+  position: absolute;
+  right: 50px;
+  z-index: 10;
+}
+/* --- CONTENEDOR PRINCIPAL DEL CARRUSEL --- */
+.project_C_slice {
+ position: relative;
+  width: 99vw;
+  height: 100%;
   top: 55%;
-  transform: translate(-50%, -50%);
   left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* --- PISTA DEL CARRUSEL (se mueve lateralmente) --- */
+.carrousel {
+  width: max-content;
+  height: 100vh;
+  display: flex;
+  gap: 150px;
+  transition: transform 0.7s ease;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20%;
+padding-right: 40%;
+}
+
+/* --- TARJETAS DEL CARRUSEL --- */
+/* base (igual que ya tenías) */
+.project_c_1,
+.project_c_2,
+.project_c_3 {
+  width: 60vw;
+  height: 35vw;
+  background: linear-gradient(135deg, #190C40, #30175D);
+  border-radius: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.9s cubic-bezier(0.19, 1, 0.22, 1),
+    width 0.9s cubic-bezier(0.19, 1, 0.22, 1),
+    height 0.9s cubic-bezier(0.19, 1, 0.22, 1),
+    border-radius 0.9s ease,
+    box-shadow 0.6s ease;
+  will-change: transform, width, height;
+}
+
+/* hover */
+.project_c_1:hover,
+.project_c_2:hover,
+.project_c_3:hover {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.45);
+  transition: box-shadow 0.5s ease;
+}
+
+/* expand (igual que antes, ligeramente ajustada) */
+.project_c_1.expand {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  transform: translateX(-20%) scale(1.02);
+  z-index: 50;
+  transition:
+    transform 1s cubic-bezier(0.25, 1, 0.5, 1),
+    width 1s cubic-bezier(0.25, 1, 0.5, 1),
+    height 1s cubic-bezier(0.25, 1, 0.5, 1),
+    border-radius 0.8s ease;
+}
+.project_c_2.expand {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  transform: translateX(-9%) scale(1.02);
+  z-index: 50;
+  transition:
+    transform 1s cubic-bezier(0.25, 1, 0.5, 1),
+    width 1s cubic-bezier(0.25, 1, 0.5, 1),
+    height 1s cubic-bezier(0.25, 1, 0.5, 1),
+    border-radius 0.8s ease;
+}
+.project_c_3.expand {
+  transform: translateX(2%) scale(1.02);
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  z-index: 50;
+  transition:
+    transform 1s cubic-bezier(0.25, 1, 0.5, 1),
+    width 1s cubic-bezier(0.25, 1, 0.5, 1),
+    height 1s cubic-bezier(0.25, 1, 0.5, 1),
+    border-radius 0.8s ease;
+}
+
+/* RETURNING (transición de regreso controlada) */
+.project_c_1.returning,
+.project_c_2.returning,
+.project_c_3.returning {
+  /* volver al estado "base" */
+  width: 60vw;
+  height: 35vw;
+  border-radius: 16px;
+  transform: translateX(0) scale(1);
+  z-index: 30; /* lo ponemos encima momentáneamente para evitar parpadeos */
+  transition:
+    transform 1.05s cubic-bezier(0.19, 1, 0.22, 1),
+    width 1.05s cubic-bezier(0.19, 1, 0.22, 1),
+    height 1.05s cubic-bezier(0.19, 1, 0.22, 1),
+    border-radius 0.9s ease,
+    box-shadow 0.6s ease;
+}
+
+
+/* --- BOTONES DEL CARRUSEL --- */
+.botones_project {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 20;
+}
+
+.btn_project {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.btn_project:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
 }

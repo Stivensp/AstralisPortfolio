@@ -81,6 +81,7 @@ display: flex;
 flex-direction: row;
 }
 .skills1{
+transform: rotate(-5deg);
 padding-bottom: 25px;
 width: 33.3%;
 height: 100%;
@@ -90,6 +91,7 @@ align-items: center;
 justify-content: center;
 }
 .skills2{
+    transform: rotate(2deg);
 width: 33.3%;
 height: 100%;
 display: flex;
@@ -98,6 +100,7 @@ justify-content: center;
 
 }
 .skills3{
+transform: rotate(-2deg);
 padding-top: 25px;
 width: 33.3%; 
 height: 100%;
@@ -118,7 +121,7 @@ flex-direction: column;
 gap: 15px;
 }
 .C_skills1_one{
-
+padding-top: 15px;
 width: 70%;
 height: 40%;
     background-color: #1A0D41;
@@ -126,7 +129,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-padding-right: 100px;
+padding-right: 70px;
 
 }
 .C_skills1_two{
@@ -150,6 +153,7 @@ gap: 15px;
 
 
 .C_skills2_one{
+    padding-top: 15px;
 width: 70%;
 height: 40%;
     background-color: #1A0D41;
@@ -157,7 +161,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-padding-right: 100px;
+padding-right: 70px;
 }
 .C_skills2_two{
 width: 90%;
@@ -176,6 +180,7 @@ flex-direction: column;
 gap: 15px;
 }
 .C_skills3_one{
+    padding-top: 15px;
 width: 70%;
 height: 40%;
     background-color: #1A0D41;
@@ -183,29 +188,29 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-padding-right: 80px;
+padding-right: 70px;
 }
-.C_skills3_two{
-width: 90%;
-height: 50%;
-  
-display: flex;
-flex-direction: row; 
-gap: 5px;
-}
+
 
 .C_pic{
-    width: 80px;
-    height: 80px;
-    background-color: #8279fc;
-
+    width: 70px;
+    height: 70px;
+  background: linear-gradient(135deg, #190C40, #30175D);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .C_name{
 
-    font-size: 25px;
+    font-size: 31px;
     font-family: var(--Fuente);
     z-index: 10;
-    color: var(--ColorOrange);
+    background: linear-gradient(180deg, #B489C2, #fc7979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .c_skill3_container_one{
@@ -213,21 +218,47 @@ gap: 5px;
     height: 36.58px;
     background-color: #2E165B;
     border-radius: 8px;
-    border-color: rgba(131, 131, 131, 0.767);
+    border: 0.1px solid rgba(255, 255, 255, 0.103);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap:10px;
 }
+.m_pic{
+   width: 25px;
+   height: 20px;
+   background-color: #37127a; 
+}
+
 
 .C_skills3_three{
     width: 86.12px;
     height: 36.58px;
     background-color: #2E165B;
     border-radius: 8px;
-    border-color: rgba(131, 131, 131, 0.767);
+
     color: white;
     display: flex;
     align-items: center;
     justify-content: center; 
 }
+.C_skills3_container{
+width: 90%;
+height: 50%;
+
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+gap: 8px;
+}
+.C_skills3_two{
+width: 100%;
+height: 30%;
+
+display: flex;
+flex-direction: row; 
+gap: 8px;
+}
+

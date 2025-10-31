@@ -404,3 +404,16 @@ font-size: 17px;
 color: white;
 font-family: var(--Fuente);
 }
+
+#btn_right_About > img{
+  width: 18px;
+  height: 18px;
+  margin-left: 2px;
+  transform: rotate(180deg);
+}
+#btn_left_About > img{
+  width: 18px;
+  height: 18px;
+  margin-left: 2px;
+  transform: rotate(0deg);
+}
