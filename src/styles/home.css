@@ -1,7 +1,9 @@
+
 .main_home{
     width: 100%;
     height: 1200px;
     position: relative;
+    overflow: hidden;
 }
 .container_home{
   width: 100%;
@@ -12,135 +14,768 @@
     #d58aba,
     #f77c83,
     #f8a173,
-    #ffd395
+    #f8a173,
+    #f8a173
   );
   position: relative;
   z-index: -1;
 }
-#Logo{
-  width:480px ;
-  height:480px ;
-  position: absolute;
-  bottom: -120px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
 #Mountain-Right{
-  width: 100%;
+width: 100%;
 z-index: 2;
 position: absolute;
-top: 46%;
-left: 50%;
-transform: translate(-50%, -50%);
+bottom:8%;
+left: 0px;  
 }
+
 #Mountain-left{
   width: 100%;
 z-index: 1;
 position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+bottom:8%;
+
 }
 
 #Rock{
-  z-index: 4;
+  z-index: 10000;  
+
 }
-/*Clouds*/
-#Cloud_Left{
+#Cloud_Left {
   width: 32%;
-z-index: 3;
-position: absolute;
-top: 30%;
-left: 350px; 
-}
-#Cloud_Left_up{
-    width: 40%;
-z-index: 1;
-position: absolute;
-top: 3%;
-left: 10%;
-}
-#Cloud_Left_Top{
-    width: 32%;
-z-index: 1;
-position: absolute;
-top: 0;
-right: 0;
-}
-#Cloud_Right_Middle{
-    width: 36%;
-z-index: 1;
-position: absolute;
-top: 13%;
-right: 11%;
-}
-#Cloud_Right_Down{
-  width: 25%;
-z-index: 1;
-position: absolute;
-top: 40%;
-right: 18%;  
-}
-#Cloud_Up{
-    width: 60%;
-z-index: 1;
-position: absolute;
-top: 0;
-right: 0;
+  z-index: 3;
+  position: absolute;
+  top: 30%;
+  left: 350px;  
+  animation: moveClouds 14s ease-in-out infinite;
 }
 
-/*Grasses*/
+#Cloud_Left_up {
+  width: 40%;
+  z-index: 1;
+  position: absolute;
+  top: 3%;
+  left: 10%;  
+  animation: moveClouds 20s ease-in-out infinite;
+}
+
+#Cloud_Left_Top {
+  width: 32%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;  
+  animation: moveClouds 22s ease-in-out infinite reverse;
+}
+
+#Cloud_Right_Middle {
+  width: 36%;
+  z-index: 1;
+  position: absolute;
+  top: 13%; 
+  right: 11%;  
+  animation: moveClouds 18s ease-in-out infinite reverse;
+}
+
+#Cloud_Right_Down {
+  width: 25%;
+  z-index: 20;
+  position: absolute;
+  top: 40%;
+  right: 18%;   
+  animation: moveClouds 16s ease-in-out infinite;
+}
+#Cloud_Right_Down2 {
+  width: 25%;
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+ left: 18%;   
+  animation: moveClouds 16s ease-in-out infinite;
+}
+#Cloud_Right_Down3 {
+  width: 25%;
+  z-index: 20;
+  position: absolute;
+  top: 48%;
+  right: 32%;
+  animation: moveClouds 16s ease-in-out infinite;
+}
+
+#Cloud_Up {
+  width: 60%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: moveClouds 24s ease-in-out infinite reverse; 
+}
+
+
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 #Grass_Right{
 width: 100%;  
 z-index: 2;
 position: absolute;
 bottom: 10%;
-right: 0px;
+right: 0px; 
 }
 #Grass_Left{
 width: 100%;
 z-index: 2;
 position: absolute;
 bottom:10%;
-left: 0px;
+left: 0px;  
 }
 #Sun{
-z-index: 2;
+z-index: -1;
 position: absolute;
-top: 0;
-right: 0;  
+top: 0px;
+right: 0px;    
 }
-/*Tapon*/
 #Tapon-Right{
     width: 85%;
 z-index: 0;
 position: absolute;
-top: 50%;
-left: 48%;
-transform: translate(-50%, -50%);    
+left: 10%;
+bottom: 18%;
+    
 }
 #Tapon-Left{
   width: 70%;
 z-index: 1;
 position: absolute;
-top: 53%;
-left: 48%;
-transform: translate(-50%, -50%);   
+left: 18%;
+bottom: 10%;
+   
 }
 #Mountain-left_tap{
   width: 100%;
 z-index: 0;
 position: absolute;
-top: 55%;
-left: 50%;
-transform: translate(-50%, -50%);  
+bottom: 3%;
 }
 #Poste{
   z-index: 3;
   width: 90%;
 position: absolute;
-bottom: -30%;
-left: 50%;
-transform: translate(-50%, -50%);   
+left: 10%;
+bottom: 7%;
+
 }
+
+#logo{
+  width: 480px;
+  position: absolute;
+  left: 37%;
+  bottom: 10%;
+  z-index: 1000;
+
+}
+.Container_all{
+  width: 100vw;
+
+  height: 100vh;
+
+}
+
+
+.Container_all img {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.main_home {
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+
+  .main_home {
+    width: 100%;
+    height: 950px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container_home {
+    width: 100%;
+    height: 950px;
+    background: linear-gradient(
+      to bottom,
+      #aa87c9,
+      #d58aba,
+      #f77c83,
+      #f8a173,
+      #f8a173,
+      #f8a173
+    );
+    position: relative;
+    z-index: -1;
+  }
+
+
+  #Mountain-Right,
+  #Mountain-left {
+    width: 100%;
+    bottom: 6%;
+  }
+
+
+  #Cloud_Left {
+    width: 28%;
+    top: 26%;
+    left: 220px;
+  }
+
+  #Cloud_Left_up {
+    width: 35%;
+    top: 2%;
+    left: 8%;
+  }
+
+  #Cloud_Left_Top {
+    width: 30%;
+    top: 0;
+    right: 0;
+  }
+
+  #Cloud_Right_Middle {
+    width: 33%;
+    top: 10%;
+    right: 8%;
+  }
+
+  #Cloud_Right_Down {
+    width: 22%;
+    top: 38%;
+    right: 16%;
+  }
+
+  #Cloud_Right_Down2 {
+    width: 22%;
+    top: 48%;
+    left: 16%;
+  }
+
+  #Cloud_Right_Down3 {
+    width: 22%;
+    top: 45%;
+    right: 28%;
+  }
+
+  #Cloud_Up {
+    width: 55%;
+    top: 0;
+    right: 0;
+  }
+
+
+  #Grass_Right,
+  #Grass_Left {
+    width: 100%;
+    bottom: 8%;
+  }
+
+  #Sun {
+    width: 100%;
+    top: 35px;
+    right: 0;
+  }
+
+
+  #Tapon-Right {
+    width: 80%;
+    left: 12%;
+    bottom: 15%;
+  }
+
+  #Tapon-Left {
+    width: 65%;
+    left: 20%;
+    bottom: 9%;
+  }
+
+  #Mountain-left_tap {
+    bottom: 2%;
+  }
+
+  #Poste {
+    width: 85%;
+    left: 8%;
+    bottom: 6%;
+  }
+
+  #logo {
+    width: 380px;
+    left: 50%;
+    bottom: 9%;
+    transform: translateX(-50%);
+  }
+
+  .Container_all {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .Container_all img {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  html, body {
+    scroll-behavior: smooth;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .main_home {
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+  }
+
+  .container_home {
+    width: 100%;
+    height: 850px;
+    background: linear-gradient(to bottom, #aa87c9, #d58aba, #f77c83, #f8a173, #f8a173);
+    position: relative;
+    z-index: -1;
+  }
+
+  #Mountain-Right,
+  #Mountain-left {
+    width: 100%;
+    bottom: 5%;
+  }
+
+  #Cloud_Left {
+    width: 35%;
+    top: 28%;
+    left: 120px;
+  }
+
+  #Cloud_Left_up {
+    width: 45%;
+    top: 5%;
+    left: 6%;
+  }
+
+  #Cloud_Left_Top {
+    width: 38%;
+    top: 0;
+    right: 0;
+  }
+
+  #Cloud_Right_Middle {
+    width: 42%;
+    top: 12%;
+    right: 6%;
+  }
+
+  #Cloud_Right_Down {
+    width: 28%;
+    top: 38%;
+    right: 10%;
+  }
+
+  #Cloud_Right_Down2 {
+    width: 28%;
+    top: 48%;
+    left: 10%;
+  }
+
+  #Cloud_Right_Down3 {
+    width: 25%;
+    top: 45%;
+    right: 25%;
+  }
+
+  #Cloud_Up {
+    width: 70%;
+    top: 0;
+    right: 0;
+  }
+
+  #Grass_Right,
+  #Grass_Left {
+    bottom: 7%;
+  }
+
+  #Sun {
+    width: 170%;
+    top: 10%;
+    right: -35%;
+  }
+
+  #Tapon-Right {
+    width: 90%;
+    left: 5%;
+    bottom: 10%;
+  }
+
+  #Tapon-Left {
+    width: 75%;
+    left: 15%;
+    bottom: 8%;
+  }
+
+  #Mountain-left_tap {
+    bottom: 2%;
+  }
+
+  #Poste {
+    width: 90%;
+    left: 5%;
+    bottom: 5%;
+  }
+
+  #logo {
+    width: 300px;
+    left: 50%;
+    bottom: 4%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .main_home {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+  }
+
+  .container_home {
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(to bottom, #aa87c9, #d58aba, #f77c83, #f8a173, #f8a173);
+    position: relative;
+    z-index: -1;
+  }
+
+  #Mountain-Right,
+  #Mountain-left {
+    width: 100%;
+    bottom: 6%;
+  }
+
+  #Cloud_Left {
+    width: 30%;
+    top: 25%;
+    left: 150px;
+  }
+
+  #Cloud_Left_up {
+    width: 40%;
+    top: 3%;
+    left: 5%;
+  }
+
+  #Cloud_Left_Top {
+    width: 35%;
+    top: 0;
+    right: 0;
+  }
+
+  #Cloud_Right_Middle {
+    width: 36%;
+    top: 10%;
+    right: 6%;
+  }
+
+  #Cloud_Right_Down {
+    width: 25%;
+    top: 40%;
+    right: 14%;
+  }
+
+  #Cloud_Right_Down2 {
+    width: 25%;
+    top: 48%;
+    left: 14%;
+  }
+
+  #Cloud_Right_Down3 {
+    width: 24%;
+    top: 44%;
+    right: 28%;
+  }
+
+  #Cloud_Up {
+    width: 60%;
+    top: 0;
+    right: 0;
+  }
+
+  #Grass_Right,
+  #Grass_Left {
+    bottom: 7%;
+  }
+
+  #Sun {
+    width: 125%;
+    top: 12%;
+    right: -13%;
+  }
+
+  #Tapon-Right {
+    width: 85%;
+    left: 7%;
+    bottom: 13%;
+  }
+
+  #Tapon-Left {
+    width: 70%;
+    left: 18%;
+    bottom: 7%;
+  }
+
+  #Mountain-left_tap {
+    bottom: 2%;
+  }
+
+  #Poste {
+    width: 88%;
+    left: 7%;
+    bottom: 5%;
+  }
+
+  #logo {
+    width: 340px;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .main_home {
+    height: 75vh; 
+  }
+
+  .container_home {
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(
+        to bottom,
+        #aa87c9,
+        #d58aba,
+        #f77c83,
+        #f8a173,
+        #f8a173,
+        #f8a173
+     );
+     position: relative;
+     z-index: -1; 
+  }
+
+  #Mountain-Right {
+      width: 120%;
+      bottom: 3%;
+  }
+
+  #Mountain-left {
+      width: 140%;
+      bottom: 3%;
+  }
+
+  #Mountain-left_tap {
+      width: 100%;
+      bottom: 1%;
+  }
+
+  #Rock {
+      z-index: 10000;  
+  }
+
+  #Cloud_Left {
+      width: 40%;
+      top: 38%; 
+  }
+
+  #Cloud_Left_up {
+      width: 70%;
+      top: 10%;
+  }
+
+  #Cloud_Left_Top {
+      width: 50%;
+      top: 5%;
+  }
+
+  #Cloud_Right_Middle {
+      width: 50%;
+      top: 20%;
+  }
+
+  #Cloud_Right_Down {
+      width: 40%;
+      top: 48%;
+  }
+
+  #Cloud_Right_Down2 {
+      width: 40%;
+      top: 58%;
+  }
+
+  #Cloud_Right_Down3 {
+      width: 40%;
+      top: 55%;
+  }
+
+  #Cloud_Up {
+      width: 80%;
+  }
+
+  #Grass_Right {
+      width: 140%;
+      bottom: 4%;
+  }
+
+  #Grass_Left {
+      width: 120%;
+      bottom: 4%;
+  }
+
+  #Sun {
+     width: 200%;
+     left: -49%;
+     top: -5%;
+  }
+
+  #Tapon-Right {
+      width: 100%;
+      bottom: 14%;
+  }
+
+  #Tapon-Left {
+      width: 75%;
+      margin-top: 3%;
+  }
+
+  #Poste {
+      width: 100%;
+      bottom: 8%;
+  }
+
+  #logo {
+      width: 260px;
+      bottom: 3%;
+  }
+
+}
+
+

@@ -1,3 +1,4 @@
+
 .main_skills{
     width: 100%;
     height: 130vh;
@@ -124,7 +125,7 @@ gap: 15px;
 padding-top: 15px;
 width: 70%;
 height: 40%;
-    background-color: #1A0D41;
+
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -156,7 +157,7 @@ gap: 15px;
     padding-top: 15px;
 width: 70%;
 height: 40%;
-    background-color: #1A0D41;
+
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -183,7 +184,7 @@ gap: 15px;
     padding-top: 15px;
 width: 70%;
 height: 40%;
-    background-color: #1A0D41;
+
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -223,14 +224,22 @@ padding-right: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap:2px;
+    font-family: var(--Fuente2);
+  font-weight: 400;
+  font-style: normal;
+
 }
 .m_pic{
    width: 25px;
    height: 20px;
-   background-color: #37127a; 
+     display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.three{
+    width: 60px;
+}
 
 .C_skills3_three{
     width: 86.12px;
@@ -251,7 +260,7 @@ display: flex;
 flex-direction: column; 
 justify-content: center;
 align-items: center;
-gap: 8px;
+gap: 6px;
 }
 .C_skills3_two{
 width: 100%;
@@ -259,6 +268,122 @@ height: 30%;
 
 display: flex;
 flex-direction: row; 
-gap: 8px;
+gap: 7px;
+}
+
+.C_skills3_two p{
+  font-size: 12px;
+  font-style: bold;
+}
+
+/* ✨ Animación de aparición */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.96);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Ocultas al inicio */
+.skills1,
+.skills2,
+.skills3 {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Cuando el observer detecta la sección */
+.visible {
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+/* Delay progresivo */
+.skills1.visible {
+  animation-delay: 0.1s;
+}
+.skills2.visible {
+  animation-delay: 0.3s;
+}
+.skills3.visible {
+  animation-delay: 0.5s;
+}
+
+
+
+
+
+
+
+/* ===== Base general (con animación constante) ===== */
+.C_skills1,
+.C_skills2,
+.C_skills3 {
+  transition: all 0.5s ease;
+  transform-origin: center;
+  position: relative;
+  will-change: transform, box-shadow;
+  animation: floatCard 3.5s ease-in-out infinite; /* 🔹 siempre activa */
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(145deg, #1a0d3b, #2b1860);
+}
+
+/* ===== Hover extra (resalta un poco más) ===== */
+.C_skills1:hover,
+.C_skills2:hover,
+.C_skills3:hover {
+  transform: scale(1.07) rotate3d(1, 1, 0, 3deg);
+  box-shadow: 0 10px 30px rgba(41, 41, 41, 0.15),
+              0 0 40px rgba(31, 1, 51, 0.25);
+  border: 1px solid rgba(32, 32, 32, 0.15);
+  background: linear-gradient(145deg, #23114e, #331f6a);
+  cursor: pointer;
+}
+
+/* ===== Animación de flotación (reutilizada) ===== */
+@keyframes floatCard {
+  0% {
+    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(0px);
+  }
+  25% {
+    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(-6px) rotateZ(0.5deg);
+  }
+  50% {
+    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(0px) rotateZ(-0.5deg);
+  }
+  75% {
+    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(6px) rotateZ(0.5deg);
+  }
+  100% {
+    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(0px) rotateZ(0deg);
+  }
+}
+
+/* ===== Efecto de resplandor sutil ===== */
+.C_skills1::after,
+.C_skills2::after,
+.C_skills3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+.C_skills1:hover::after,
+.C_skills2:hover::after,
+.C_skills3:hover::after {
+  opacity: 1;
+  box-shadow: 0 0 30px rgba(3, 3, 3, 0.3);
 }
 

@@ -25,7 +25,7 @@ const Footer = () => {
                 <p>Terms of use</p>
          </div>
          <div className="downContainerTwo">
-                <p>Website by Steven Blanco</p> 
+                <p>Website by Bramdon Steven Blanco Contreras</p> 
          </div>
         </div>
        </div>

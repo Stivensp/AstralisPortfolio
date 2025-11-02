@@ -19,7 +19,7 @@ const About =() =>{
                             </div>
                             <div className="C_me_pic">
                                 <div className="O_me_circle">
-
+                                    <img src="..\Assets\si.jpg" alt="" />
                                 </div>
                             </div>
                             <div className="C_me_button">
@@ -61,8 +61,8 @@ const About =() =>{
                             </div>
                         </div>
                         <div className="C-up_Arrow">
-                            <button id="btn_right_About"><img src="public\Assets\Icons\arrow.png" alt="" /></button>
-                            <button id="btn_left_About"><img src="public\Assets\Icons\arrow.png" alt="" /></button>
+                            <button id="btn_right_About">‹</button>
+                            <button id="btn_left_About">›</button>
                         </div>
                     </div>
                     <div className="C-down">
@@ -89,8 +89,8 @@ const About =() =>{
                             </div>
                         </div>
                         <div className="C-down_Arrow">
-                            <button id="btn_right_About"><img src="public\Assets\Icons\arrow.png" alt="" /></button>
-                            <button id="btn_left_About"><img src="public\Assets\Icons\arrow.png" alt="" /></button>
+                            <button id="btn_right_About">‹</button>
+                            <button id="btn_left_About">›</button>
                         </div>
                     </div>
                 </div>

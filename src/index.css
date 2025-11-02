@@ -1,3 +1,7 @@
+
+
+
+
 :root {
   --ColorPrimary:#2F122E;
   --ColorSecundary:#09050D;
@@ -10,7 +14,7 @@
   --ColorOrange:#CB7F65;
   --ColorLettersWhiteDif:#ffffff61;
   --Fuente: "Trium", serif;
-
+  --Fuente2: "CamingoDosProCd", serif;
 }
 .dsad{
 background: linear-gradient(180deg, #B489C2, #fc7979);
@@ -22,7 +26,12 @@ color: transparent;
 @font-face {
   font-family: 'Trium';
   src: url('./Fonts/Trium.otf') format('opentype'),
-       url('./Fonts/Trium.otf') format('opentype');
+
+}
+@font-face {
+  font-family: 'Trium2';
+  src: url('./src/Fonts/triumviratecgextracomp.otf') format('opentype'),
+
 }
 form {
   all: unset;
@@ -56,3 +65,91 @@ form {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--ColorPrimary);
 }
+
+
+/*Font*/
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-Light.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-LightItalic.otf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-RegularItalic.otf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-SemiBold.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-SemiBoldItalic.otf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-Bold.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-BoldItalic.otf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-ExtraBold.otf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-ExtraBoldItalic.otf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-Black.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CamingoDosProCd';
+  src: url('/src/Fonts/camingodos-pro-cd/CamingoDosProCd-BlackItalic.otf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* 🚫 Por defecto todo oculto */

@@ -1,3 +1,4 @@
+
 .main_project{
     width: 100%;
     height: 130vh;
@@ -63,12 +64,35 @@ left: 33%;
 
 
 .container_project_ef{
-  width: 700px;
-  height: 300px;
-  background-color: aquamarine;
+  width: 450px;
+  height: 250px;
   position: absolute;
-  right: 50px;
+  right: 75px;
   z-index: 10;
+  top: 45px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.container_project_ef > :nth-child(1){
+font-size: 65px;
+background: linear-gradient(180deg, #B489C2, #fc7979);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+ font-family:var(--Fuente);
+ transform: rotate(-3deg);
+}
+.container_project_ef > :nth-child(2){
+font-size: 35px;
+background: #CB7F65;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+font-family:var(--Fuente);  
+ transform: rotate(-4deg);
 }
 /* --- CONTENEDOR PRINCIPAL DEL CARRUSEL --- */
 .project_C_slice {
@@ -118,7 +142,18 @@ padding-right: 40%;
     box-shadow 0.6s ease;
   will-change: transform, width, height;
 }
-
+.project_c_1 > img{
+ object-fit: cover;
+ width: 100%;
+}
+.project_c_2 > img{
+ object-fit: contain;
+ width: 105%;
+}
+.project_c_3 > img{
+ object-fit: contain;
+ width: 105%;
+}
 /* hover */
 .project_c_1:hover,
 .project_c_2:hover,
@@ -133,7 +168,7 @@ padding-right: 40%;
   height: 100vh;
   border-radius: 0;
   transform: translateX(-20%) scale(1.02);
-  z-index: 50;
+  z-index: 100;
   transition:
     transform 1s cubic-bezier(0.25, 1, 0.5, 1),
     width 1s cubic-bezier(0.25, 1, 0.5, 1),
@@ -145,7 +180,7 @@ padding-right: 40%;
   height: 100vh;
   border-radius: 0;
   transform: translateX(-9%) scale(1.02);
-  z-index: 50;
+  z-index: 100;
   transition:
     transform 1s cubic-bezier(0.25, 1, 0.5, 1),
     width 1s cubic-bezier(0.25, 1, 0.5, 1),
@@ -157,7 +192,7 @@ padding-right: 40%;
   width: 100vw;
   height: 100vh;
   border-radius: 0;
-  z-index: 50;
+  z-index: 100;
   transition:
     transform 1s cubic-bezier(0.25, 1, 0.5, 1),
     width 1s cubic-bezier(0.25, 1, 0.5, 1),
@@ -186,13 +221,10 @@ padding-right: 40%;
 
 /* --- BOTONES DEL CARRUSEL --- */
 .botones_project {
-  position: absolute;
-  bottom: 150px;
-  left: 50%;
-  transform: translateX(-50%);
+
   display: flex;
-  gap: 15px;
-  z-index: 20;
+  gap: 8px;
+z-index: 1;
 }
 
 .btn_project {
@@ -200,15 +232,58 @@ padding-right: 40%;
   height: 45px;
   border: none;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
+  background-color: #1B122F;
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.3s ease;
   backdrop-filter: blur(6px);
+  background-color: #1B122F;
+    background: linear-gradient(180deg, #B489C2, #fc7979);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+ font-family:var(--Fuente);
 }
 
 .btn_project:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: scale(1.1);
+
+  transform: scale(1.2);
 }
+
+.botones_style{
+    position: absolute;
+  bottom: 150px;
+  left: 46%;
+  border-radius: 15px;
+  background-color: #1B122F;
+  width: 180px;
+  height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+ z-index: 11;
+}
+
+.btn_project_Y{
+    width: 60px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: #1B122F;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+  background-color: #1B122F;
+  background: linear-gradient(180deg, #B489C2, #fc7979);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+ font-family:var(--Fuente);
+
+}
+
