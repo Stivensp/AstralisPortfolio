@@ -1,7 +1,9 @@
 
 
 
-
+html, body {
+  touch-action: pan-x pan-y;
+}
 :root {
   --ColorPrimary:#2F122E;
   --ColorSecundary:#09050D;
@@ -15,6 +17,9 @@
   --ColorLettersWhiteDif:#ffffff61;
   --Fuente: "Trium", serif;
   --Fuente2: "CamingoDosProCd", serif;
+
+
+  
 }
 .dsad{
 background: linear-gradient(180deg, #B489C2, #fc7979);

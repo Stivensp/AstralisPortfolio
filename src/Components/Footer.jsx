@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="upContainer">
             <div className="upContainerOne">
                 <p>Steven</p>
-                <p>Home</p>
-                <p>Skills</p>
-                <p>Projects</p>
-                <p>About</p>
-                <p>Contact</p>    
+                <p>Inicio</p>
+                <p>Habilidades</p>
+                <p>Proyectos</p>
+                <p>Sobre Mi</p>
+                <p>Contacto</p>    
             </div>
             <div className="upContainerTwo">
 
@@ -20,12 +20,12 @@ const Footer = () => {
         </div>
         <div className="downContainer">
          <div className="downContainerOne">
-                <p>2025</p>
-                <p>Privacy Policy</p>
-                <p>Terms of use</p>
+                <p>2026</p>
+                <p>Politicas de Privacidad</p>
+                <p>Terminos de uso</p>
          </div>
          <div className="downContainerTwo">
-                <p>Website by Bramdon Steven Blanco Contreras</p> 
+                <p>Website hecha por Bramdon Stiven Blanco Contreras</p> 
          </div>
         </div>
        </div>

@@ -81,13 +81,13 @@ const Project = () => {
             </div>
 
             <div className="slide">
-              <a href="#" target="_blank" rel="noopener noreferrer" onClick={handleClick}>
+              <a href="https://pokedex-swart-six-48.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleClick}>
                 <img src="../Assets/Project/4.png" alt="Proyecto 4" />
               </a>
             </div>
 
             <div className="slide">
-              <a href="#" target="_blank" rel="noopener noreferrer" onClick={handleClick}>
+              <a href="https://entregable-tres.vercel.app/" target="_blank" rel="noopener noreferrer" onClick={handleClick}>
                 <img src="../Assets/Project/5.png" alt="Proyecto 5" />
               </a>
             </div>
@@ -100,9 +100,9 @@ const Project = () => {
       </div>
 
       <div className="container_project_ef">
-        <h1>Projects</h1>
+        <h1>Proyectos</h1>
         <p>
-          At this stage we can see all <br /> my projects at the moment, I hope you enjoy it
+          En este sitio <br /> podras encontrar algunos de mis proyectos personales <br />
         </p>
       </div>
 

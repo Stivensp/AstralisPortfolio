@@ -19,7 +19,7 @@ const Contact = () =>{
                         <div className="title_form_C">
                             <div className="childOne">
                             <img src="..\Assets\Icons\chat_bubble.png" alt="" />
-                            <p>Send Message</p>
+                            <p>Enviar Mensaje</p>
                             </div>
                             <div className="childTwo">
                             <img src="..\Assets\Icons\wifi.png" alt="" />
@@ -29,36 +29,36 @@ const Contact = () =>{
                         <div className="fistForm">
                             <div>
                                 <form action="">
-                                    <label htmlFor="Nombe">Name</label>
-                                    <input className="inputuno" type="text" placeholder="Enter your name" name="Name" />
+                                    <label htmlFor="Nombe">Nombre</label>
+                                    <input className="inputuno" type="text" placeholder="Ingresa tu nombre" name="Name" />
                                 </form>
                             </div>
                             <div>
                                 <form  action="">
                                     <label htmlFor="Nombe">Email</label>
-                                    <input className="inputuno" type="text" placeholder="Enter your email" name="Name" />
+                                    <input className="inputuno" type="text" placeholder="Ingresa tu email" name="Name" />
                                 </form>
                             </div>
                         </div>
                         <div className="secondForm">
                             <div className="Container_subject">
                                <form action="">
-                                    <label id="Subject" htmlFor="Nombe">Subject</label>
-                                    <input className="inputdos" type="text" placeholder="Project discussion" name="Name" />
+                                    <label id="Subject" htmlFor="Nombe">Tema</label>
+                                    <input className="inputdos" type="text" placeholder="Idea de proyecto" name="Name" />
                                 </form>  
                             </div>
                         </div>
                         <div className="thirdForm">
                             <div className="ContainerMessage">
                                <form action="">
-                                    <label id="Message" htmlFor="Nombe">Message</label>
-                                    <textarea className="inputtres" type="text" placeholder="Tell me about your project..." name="Name" />
+                                    <label id="Message" htmlFor="Nombe">Mensaje</label>
+                                    <textarea className="inputtres" type="text" placeholder="Dime sobre tu proyecto..." name="Name" />
                                 </form>  
                             </div>
                         </div>
                         <div className="buttomForm">
                             <button id="buttomsend">
-                                <p>Send Message</p>
+                                <p>Enviar Mensaje</p>
                                 <img src="..\Assets\Icons\send.png" alt="" />
                             </button>
                         </div>
@@ -68,7 +68,7 @@ const Contact = () =>{
                 <div className="conect">
                     <div className="container-c">
                         <div className="titleC">
-                            <p>Conect</p>
+                            <p>Conecta</p>
                         </div>
                         <div className="logoC">
                            <div className="logo1">
@@ -88,7 +88,7 @@ const Contact = () =>{
                 <div className="Info">
                     <div className="infodiv1">
                         <div className="infodiv2">
-                            <p>Contact Information</p>                          
+                            <p>Informacion Contacto</p>                          
                         </div>
                         <div className="infodiv3">
                             <div className="imgi1">
@@ -104,7 +104,7 @@ const Contact = () =>{
                                 <img src="..\Assets\Icons\call_end.png" alt="" />
                             </div>
                             <div className="encrypted">
-                                <p className="sb">Phone</p>
+                                <p className="sb">Celular</p>
                                 <p>+57 3224249116</p>                                
                             </div>                                                         
                         </div>
@@ -113,7 +113,7 @@ const Contact = () =>{
                                 <img src="..\Assets\Icons\location_on.png" alt="" />
                             </div>
                             <div className="encrypted">
-                                <p className="sb">Location</p>
+                                <p className="sb">Localidad</p>
                                 <p>Bucaramanga,Colombia</p>                                
                             </div>                                                        
                         </div>
@@ -139,8 +139,8 @@ const Contact = () =>{
                                 <img src="..\Assets\Icons\swap_horiz.png" alt="" />
                             </div>
                             <div className="directline">
-                                <p className="sb">Direct Line</p>
-                                <p>Secure communication channel</p>
+                                <p className="sb">Linea Directa</p>
+                                <p>Canal de comunicación seguro</p>
                             </div>
                         </div>
 
@@ -149,8 +149,8 @@ const Contact = () =>{
                                 <img src="..\Assets\Icons\mail-1.png" alt="" />
                             </div>                            
                             <div className="encrypted">
-                                <p className="sb">Encrypted</p>
-                                <p>End-to-end protection</p>                                
+                                <p className="sb">Encriptado</p>
+                                <p>Protección de extremo a extremo</p>                                
                             </div>                       
                         </div>
 
@@ -159,8 +159,8 @@ const Contact = () =>{
                                 <img src="..\Assets\Icons\fast_forward_filled.png" alt="" />                                
                             </div>                            
                             <div className="fast">
-                                <p className="sb">Fast Response</p>
-                                <p>24 hour turnaround</p>                                
+                                <p className="sb">Respuesta Rápida</p>
+                                <p>24 horas de plazo</p>                                
                             </div>                        
                         </div>
 
@@ -169,8 +169,8 @@ const Contact = () =>{
                                 <img src="..\Assets\Icons\gmail_groups.png" alt="" />
                             </div>                            
                             <div className="global">
-                                <p className="sb">Direct Line</p>
-                                <p>Worldwide availability</p>
+                                <p className="sb">Linea Directa</p>
+                                <p>Disponibilidad mundial</p>
                             </div>                       
                         </div>    
                     </div>

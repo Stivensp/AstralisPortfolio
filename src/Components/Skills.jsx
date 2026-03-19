@@ -41,7 +41,7 @@ const Skills = () => {
               </div>
               <div className="C_name">
                 <p>
-                  Frontend <br /> Development
+                  Frontend <br /> Desarrollo
                 </p>
               </div>
             </div>
@@ -105,7 +105,7 @@ const Skills = () => {
               </div>
               <div className="C_name">
                 <p>
-                  Back-end <br /> Development
+                  Back-end <br /> Desarrollo
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ const Skills = () => {
               </div>
               <div className="C_name">
                 <p>
-                  Tools & <br /> Technologies
+                  Herramientas & <br /> Tecnologias
                 </p>
               </div>
             </div>
@@ -219,8 +219,8 @@ const Skills = () => {
         </div>
       </div>
 <div className="skills_header">
-  <h1 className="name_skills">Steven Blanco</h1>
-  <h1 className="proffesion_skills">Software Developer</h1>
+  <h1 className="name_skills"> Steven Blanco</h1>
+  <h1 className="proffesion_skills">Desarrollador de Software</h1>
 </div>
       <img id="img_top_skills" src="../Assets/Cave/Separete-Cav.svg" alt="" />
       <img

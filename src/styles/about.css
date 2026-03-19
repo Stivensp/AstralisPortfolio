@@ -5,6 +5,7 @@
     height: 130vh;
     background-color: var(--ColorPrimary);
     position: relative;
+    overflow: hidden;
 }
 
 .image-background-about{

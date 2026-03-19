@@ -1,0 +1,43 @@
+.main_cargador{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    font-family: var(--Fuente);
+    color: #797979;
+}
+
+.loading-container {
+  width: 15%;
+  height: 6px;
+  background-color: #ddd;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+}
+
+.loading-bar {
+  width: 100%; /* ancho completo del gradiente */
+  height: 100%;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4, #a18cd1);
+  border-radius: 3px;
+  position: absolute;
+  left: -100%; /* empieza fuera del contenedor */
+  animation: load 3s linear infinite; /* animación hacia la derecha */
+}
+.load_cloud{
+    width: 200px;
+      animation: load 3s linear infinite; /* animación hacia la derecha */
+}
+@keyframes load {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
