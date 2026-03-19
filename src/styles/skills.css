@@ -1,7 +1,336 @@
-
 .main_skills{
     width: 100%;
-    height: 130vh;
+    height: 120vh;
+    position: relative;
+    background-color: var(--ColorPrimary);
+    overflow: hidden;
+}
+
+/* Fondo */
+.image-background-skills{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    filter: blur(2px);
+    top: 0;
+    left: 0;
+}
+
+/* Separadores */
+#img_top_skills{
+    width: 250%;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) rotate(180deg);
+    z-index: 2;
+}
+
+#img_down_skills{
+    width: 250%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Elementos */
+#Rock{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#pc{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    z-index: 1;
+}
+
+/* CONTENEDOR */
+.skills_container{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    z-index: 10;
+}
+
+/* COLUMNAS */
+.skills1,
+.skills2,
+.skills3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARDS */
+.C_skills1,
+.C_skills2,
+.C_skills3{
+    width: 70%;
+    padding: 15px 0;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    background: linear-gradient(145deg, #1a0d3b, #2b1860);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    transition: all 0.5s ease;
+    position: relative;
+    animation: floatCard 3.5s ease-in-out infinite;
+}
+
+/* Hover */
+.C_skills1:hover,
+.C_skills2:hover,
+.C_skills3:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.C_skills1_one,
+.C_skills2_one,
+.C_skills3_one{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Contenido inferior */
+.C_skills1_two,
+.C_skills2_two{
+    width: 90%;
+    height: 90px;
+    border-radius: 8px;
+}
+
+.C_skills1_two{ background-color: #8279fc; }
+.C_skills2_two{ background-color: #79fc9a; }
+
+/* Skills 3 */
+.C_skills3_container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start; /* más natural tipo lista */
+    overflow: hidden;
+}
+.c_skill3_container_one,
+.C_skills3_three{
+    flex: 0 1 auto; /* 🔥 pueden encogerse */
+    min-width: 60px;
+    max-width: 100%;
+}
+.C_skills3_two{
+    display: flex;
+    gap: 7px;
+}
+
+.C_skills3_three{
+    width: 70px;
+    height: 30px;
+    background-color: #2E165B;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+/* UI */
+.C_pic{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #190C40, #30175D);
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.C_name{
+    font-size: 16px;
+    font-family: var(--Fuente);
+
+    background: linear-gradient(180deg, #B489C2, #fc7979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.c_skill3_container_one{
+    width: 70px;
+    height: 30px;
+    background-color: #2E165B;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--Fuente2);
+    font-size: 10px;
+    color: white;
+}
+
+.m_pic{
+   width: 18px;
+   height: 16px;
+}
+
+/* Animación entrada */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills1,
+.skills2,
+.skills3{
+  opacity: 0;
+}
+
+.visible{
+  animation: fadeUp 1s ease forwards;
+}
+
+.skills1.visible{ animation-delay: 0.1s; }
+.skills2.visible{ animation-delay: 0.3s; }
+.skills3.visible{ animation-delay: 0.5s; }
+
+/* Flotación */
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+.skills_header{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    text-align: center;
+
+    z-index: 20;
+}
+
+/* Nombre */
+.name_skills{
+    font-size: 35px;
+    font-family: var(--Fuente);
+    color: white;
+    margin: 0;
+
+        rotate:0.64deg;
+    font-family: var(--Fuente);
+
+
+    translate: (-50% -50%);
+    color: var(--ColorOrange);
+}
+
+/* Profesión */
+.proffesion_skills{
+    rotate:2.64deg;
+    font-family: var(--Fuente);
+
+
+
+    background: linear-gradient(180deg, #B489C2, #fc7979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 35px;  
+}@media (min-width: 600px) and (max-width: 1023px){
+.name_skills{
+    font-size: clamp(28px, 6vw, 65px); /* 🔥 escala automática */
+    font-family: var(--Fuente);
+    color: var(--ColorOrange);
+    margin: 0;
+}
+
+.proffesion_skills{
+    font-size: clamp(24px, 5vw, 60px);
+    font-family: var(--Fuente);
+    margin: 5px 0 0;
+
+
+    -webkit-text-fill-color: transparent;
+}
+  .skills_container{
+    width: 70%; /* 🔥 más estrecho → cards menos largas */
+    gap: 30px;
+  }
+
+  .C_skills1,
+  .C_skills2,
+  .C_skills3{
+    width: 80%;
+    padding: 25px 0; /* 🔥 más altura */
+    gap: 18px;
+  }
+
+  .C_skills1_two,
+  .C_skills2_two{
+    height: 170px; /* 🔥 más alto */
+  }
+
+  .C_skills3_container{
+    gap: 10px;
+  }
+
+  .C_pic{
+    width: 60px;
+    height: 60px;
+  }
+
+  .C_name{
+    font-size: 25px;
+  }
+
+}
+/* DESKTOP */
+/* DESKTOP SOLO */
+@media (min-width: 1024px){
+
+
+.main_skills{
+        width: 100%;
+
+
+    max-height: 1080px;
     position: relative;
     background-color: var(--ColorPrimary);
     min-width: 100%;
@@ -18,16 +347,17 @@
 
 #img_top_skills{
     width: 100%;
-    top: 0;
+    top: -10px;
+    left: 0px;
     z-index: 2;
     position: absolute;
     transform: rotate(180deg);
     z-index: 2;   
 }
 #img_down_skills{
-width: 100%;
+width: 120%;
 position: absolute;
-bottom: 48px;
+bottom: 0px;
 z-index: 2;
 }
 #Rock{
@@ -39,48 +369,35 @@ z-index: 2;
     position: absolute;
     bottom: 105px;
     z-index: 1;
-    left: -45px;
+
     width:100% ;
 }
-.name_skills{
-    rotate:0.64deg;
-    font-size: 65px;
-    font-family: var(--Fuente);
-    position: absolute;
-    top: 129px;
-    z-index: 10;
-    left: 39%;
-    translate: (-50% -50%);
-    color: var(--ColorOrange);
-}
-.proffesion_skills{
-    rotate:2.64deg;
-    font-family: var(--Fuente);
-    position: absolute;
-    top: 230px;
-    z-index: 10;
-    left: 34%;
-    translate: (-50% -50%);
-    background: linear-gradient(180deg, #B489C2, #fc7979);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    font-size: 75px;  
-}
 
-.skills_container{
-left: 10%;
-translate: (-50% -50%);
+
+
+
+
+  .skills_header{
+    top: 7%;
+  }
+
+  .name_skills{
+    font-size: 80px;
+  }
+
+  .proffesion_skills{
+    font-size: 45px;
+  }
+
+  .skills_container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 top: 30%;
-position: absolute;
 
-width: 1540px;
 height: 425px;
-z-index: 10;
-display: flex;
-flex-direction: row;
-}
+  }
+
 .skills1{
 transform: rotate(-5deg);
 padding-bottom: 25px;
@@ -167,7 +484,7 @@ padding-right: 70px;
 .C_skills2_two{
 width: 90%;
 height: 50%;
-background-color: #79fc9a;   
+  
 }
 
 .C_skills3{
@@ -276,114 +593,18 @@ gap: 7px;
   font-style: bold;
 }
 
-/* ✨ Animación de aparición */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80px) scale(0.96);
+  #pc{
+    width: 120%;
+    bottom: 15px;
   }
-  60% {
-    opacity: 1;
-    transform: translateY(-10px) scale(1.02);
+
+  .C_name{
+    font-size: 24px;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
+
+  .C_pic{
+    width: 60px;
+    height: 60px;
   }
+
 }
-
-/* Ocultas al inicio */
-.skills1,
-.skills2,
-.skills3 {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-/* Cuando el observer detecta la sección */
-.visible {
-  animation: fadeUp 1.2s ease-out forwards;
-}
-
-/* Delay progresivo */
-.skills1.visible {
-  animation-delay: 0.1s;
-}
-.skills2.visible {
-  animation-delay: 0.3s;
-}
-.skills3.visible {
-  animation-delay: 0.5s;
-}
-
-
-
-
-
-
-
-/* ===== Base general (con animación constante) ===== */
-.C_skills1,
-.C_skills2,
-.C_skills3 {
-  transition: all 0.5s ease;
-  transform-origin: center;
-  position: relative;
-  will-change: transform, box-shadow;
-  animation: floatCard 3.5s ease-in-out infinite; /* 🔹 siempre activa */
-
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background: linear-gradient(145deg, #1a0d3b, #2b1860);
-}
-
-/* ===== Hover extra (resalta un poco más) ===== */
-.C_skills1:hover,
-.C_skills2:hover,
-.C_skills3:hover {
-  transform: scale(1.07) rotate3d(1, 1, 0, 3deg);
-  box-shadow: 0 10px 30px rgba(41, 41, 41, 0.15),
-              0 0 40px rgba(31, 1, 51, 0.25);
-  border: 1px solid rgba(32, 32, 32, 0.15);
-  background: linear-gradient(145deg, #23114e, #331f6a);
-  cursor: pointer;
-}
-
-/* ===== Animación de flotación (reutilizada) ===== */
-@keyframes floatCard {
-  0% {
-    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(0px);
-  }
-  25% {
-    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(-6px) rotateZ(0.5deg);
-  }
-  50% {
-    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(0px) rotateZ(-0.5deg);
-  }
-  75% {
-    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(6px) rotateZ(0.5deg);
-  }
-  100% {
-    transform: scale(1.03) rotate3d(1, 1, 0, 2deg) translateY(0px) rotateZ(0deg);
-  }
-}
-
-/* ===== Efecto de resplandor sutil ===== */
-.C_skills1::after,
-.C_skills2::after,
-.C_skills3::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.5s ease, box-shadow 0.5s ease;
-}
-
-.C_skills1:hover::after,
-.C_skills2:hover::after,
-.C_skills3:hover::after {
-  opacity: 1;
-  box-shadow: 0 0 30px rgba(3, 3, 3, 0.3);
-}
-

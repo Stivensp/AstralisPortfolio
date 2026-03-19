@@ -1,66 +1,101 @@
-
-.main_footer{
+.main_footer {
     background-color: var(--ColorSecundary);
     width: 100%;
-    height: 40vh;
+    min-height: 20vh; /* Cambiado de 40vh a min-height para flexibilidad */
     font-family: var(--Fuente);
     color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    padding: 40px 0; /* Espaciado interno */
 }
-/*Up Container*/
-.fourContainer{
-width: 100%;
-height: 80%;
+
+.fourContainer {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-.upContainer{
-width: 100%;
-height: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: row;
+
+/* --- Contenedor Superior (Navegación) --- */
+.upContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
 }
-.upContainerOne{
-width: 50%;
-height: 100%;
-align-content: center;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: center;
-font-size: 23px;
+
+.upContainerOne {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los links bajen si no caben */
+    justify-content: center;
+    gap: 20px;
+    font-size: clamp(16px, 2vw, 20px);
 }
-.upContainerTwo{
-width: 50%;
-height: 100%;
+
+.upContainerOne p {
+    cursor: pointer;
+    transition: color 0.3s;
 }
-/*Down Container*/
-.downContainer{
-width: 100%;
-height: 50%;
-color: var(--ColorLettersWhiteDif);
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: center;
+
+.upContainerOne p:hover {
+    color: var(--ColorOrange);
 }
-.downContainerOne{
-width: 50%;
-height: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
+
+/* --- Contenedor Inferior (Legal y Créditos) --- */
+.downContainer {
+    width: 100%;
+    color: var(--ColorLettersWhiteDif);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
 }
-.downContainerTwo{
-width: 50%;
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding-right: 150px;
-align-items: self-end;
+
+.downContainerOne {
+    display: flex;
+    gap: 20px;
+}
+
+.downContainerTwo {
+    text-align: right;
+}
+
+/* ==========================================
+   MÓVIL (Media Query para pantallas pequeñas)
+   ========================================== */
+@media (max-width: 768px) {
+    .main_footer {
+        height: auto;
+    }
+
+    .upContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .upContainerOne {
+        flex-direction: column; /* Links en lista vertical */
+        gap: 15px;
+    }
+
+    .downContainer {
+        flex-direction: column; /* Legales uno abajo del otro */
+        gap: 20px;
+        text-align: center;
+    }
+
+    .downContainerOne {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .downContainerTwo {
+        text-align: center;
+        padding-right: 0; /* Eliminamos el padding lateral */
+        margin-top: 10px;
+    }
 }

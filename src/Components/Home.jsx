@@ -65,7 +65,9 @@ const Home = () => {
           <img id="Cloud_Right_Middle" className="cloud float4" src="../Assets/Parallax/Recurso 6Cloud3.png" alt="" />
           <img id="Cloud_Right_Down" className="cloud float5" src="../Assets/Parallax/Recurso 8Cloud5.png" alt="" />
           <img id="Cloud_Right_Down2" className="cloud float5" src="../Assets/Parallax/Recurso 8Cloud5.png" alt="" />
-
+      <div className="bloquer"> 
+    
+      </div>
           <img id="Grass_Right" src="../Assets/Parallax/Grass-right.svg" alt="" />
           <img id="Grass_Left" src="../Assets/Parallax/Grass-Left.svg" alt="" />
           <img id="Sun" src="../Assets/Parallax/Sun.svg" alt="" />

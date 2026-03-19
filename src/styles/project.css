@@ -1,51 +1,58 @@
+.main_project {
+  width: 100%;
+  height: 130vh;
+  background-color: var(--ColorPrimary);
+  position: relative;
+}
 
-.main_project{
-    width: 100%;
-    height: 130vh;
-    background-color: var(--ColorPrimary);
-    position: relative;
+.image-background-project {
+  margin-top: 5px;
+  width: 100%;
+  height: 125vh;
+  position: absolute;
+  object-fit: cover;
+  opacity: 0.70;
+  /* 50% de transparencia */
+  background-position: center;
+  background-size: 120%;
+  filter: blur(3px);
+  /* 🔥 Desenfoque */
 }
-.image-background-project{
-margin-top: 5px;
-width: 100%;
-height: 125vh;
-position: absolute;
-object-fit: cover;
-opacity: 0.70; /* 50% de transparencia */
-background-position: center;
-background-size: 120%;
-      filter: blur(3px); /* 🔥 Desenfoque */
-}
-#img_top_project{
-    z-index: 2;
-width: 100%;
-z-index: 2;
-position: absolute;
-transform: scaleY(0.6); /* Reduce la altura al 70% */
-transform-origin: top;
-     
-}
-#img_down_project{
-width: 100%;
-position: absolute;
-bottom: 25px;
 
- 
+#img_top_project {
+  z-index: 2;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  transform: scaleY(0.6);
+  /* Reduce la altura al 70% */
+  transform-origin: top;
+
 }
-#img_top_project-chain{
-width: 100%;
-position: absolute;
-z-index: 1;
-top: 0;
+
+#img_down_project {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+
+
 }
-#img_top_project-tuerca{
-width: 100%;
-position: absolute;
-z-index: 1; 
-width: 300px;
-height: 300px;
-top: 40px;
-left: 33%;
+
+#img_top_project-chain {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+#img_top_project-tuerca {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  top: 40px;
+  left: 33%;
   /* Animación */
   animation: rotar 9s linear infinite;
 }
@@ -57,13 +64,14 @@ left: 33%;
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
 
-.container_project_ef{
+.container_project_ef {
   width: 450px;
   height: 250px;
   position: absolute;
@@ -74,29 +82,32 @@ left: 33%;
   display: flex;
   flex-direction: column;
 }
-.container_project_ef > :nth-child(1){
-font-size: 65px;
-background: linear-gradient(180deg, #B489C2, #fc7979);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-color: transparent;
- font-family:var(--Fuente);
- transform: rotate(-3deg);
+
+.container_project_ef> :nth-child(1) {
+  font-size: 65px;
+  background: linear-gradient(180deg, #B489C2, #fc7979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: var(--Fuente);
+  transform: rotate(-3deg);
 }
-.container_project_ef > :nth-child(2){
-font-size: 35px;
-background: #CB7F65;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-color: transparent;
-font-family:var(--Fuente);  
- transform: rotate(-4deg);
+
+.container_project_ef> :nth-child(2) {
+  font-size: 35px;
+  background: #CB7F65;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: var(--Fuente);
+  transform: rotate(-4deg);
 }
+
 /* --- CONTENEDOR PRINCIPAL DEL CARRUSEL --- */
 .project_C_slice {
- position: relative;
+  position: relative;
   width: 99vw;
   height: 100%;
   top: 55%;
@@ -107,6 +118,7 @@ font-family:var(--Fuente);
   justify-content: flex-start;
   z-index: 10;
   overflow: hidden;
+  background-color: #B489C2;
 }
 
 /* --- PISTA DEL CARRUSEL (se mueve lateralmente) --- */
@@ -119,104 +131,12 @@ font-family:var(--Fuente);
   align-items: center;
   justify-content: center;
   padding-left: 20%;
-padding-right: 40%;
+  padding-right: 40%;
+  background-color: #fc7979;
 }
 
 /* --- TARJETAS DEL CARRUSEL --- */
-/* base (igual que ya tenías) */
-.project_c_1,
-.project_c_2,
-.project_c_3 {
-  width: 60vw;
-  height: 35vw;
-  background: linear-gradient(135deg, #190C40, #30175D);
-  border-radius: 16px;
-  cursor: pointer;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  transition:
-    transform 0.9s cubic-bezier(0.19, 1, 0.22, 1),
-    width 0.9s cubic-bezier(0.19, 1, 0.22, 1),
-    height 0.9s cubic-bezier(0.19, 1, 0.22, 1),
-    border-radius 0.9s ease,
-    box-shadow 0.6s ease;
-  will-change: transform, width, height;
-}
-.project_c_1 > img{
- object-fit: cover;
- width: 100%;
-}
-.project_c_2 > img{
- object-fit: contain;
- width: 105%;
-}
-.project_c_3 > img{
- object-fit: contain;
- width: 105%;
-}
-/* hover */
-.project_c_1:hover,
-.project_c_2:hover,
-.project_c_3:hover {
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.45);
-  transition: box-shadow 0.5s ease;
-}
 
-/* expand (igual que antes, ligeramente ajustada) */
-.project_c_1.expand {
-  width: 100vw;
-  height: 100vh;
-  border-radius: 0;
-  transform: translateX(-20%) scale(1.02);
-  z-index: 100;
-  transition:
-    transform 1s cubic-bezier(0.25, 1, 0.5, 1),
-    width 1s cubic-bezier(0.25, 1, 0.5, 1),
-    height 1s cubic-bezier(0.25, 1, 0.5, 1),
-    border-radius 0.8s ease;
-}
-.project_c_2.expand {
-  width: 100vw;
-  height: 100vh;
-  border-radius: 0;
-  transform: translateX(-9%) scale(1.02);
-  z-index: 100;
-  transition:
-    transform 1s cubic-bezier(0.25, 1, 0.5, 1),
-    width 1s cubic-bezier(0.25, 1, 0.5, 1),
-    height 1s cubic-bezier(0.25, 1, 0.5, 1),
-    border-radius 0.8s ease;
-}
-.project_c_3.expand {
-  transform: translateX(2%) scale(1.02);
-  width: 100vw;
-  height: 100vh;
-  border-radius: 0;
-  z-index: 100;
-  transition:
-    transform 1s cubic-bezier(0.25, 1, 0.5, 1),
-    width 1s cubic-bezier(0.25, 1, 0.5, 1),
-    height 1s cubic-bezier(0.25, 1, 0.5, 1),
-    border-radius 0.8s ease;
-}
-
-/* RETURNING (transición de regreso controlada) */
-.project_c_1.returning,
-.project_c_2.returning,
-.project_c_3.returning {
-  /* volver al estado "base" */
-  width: 60vw;
-  height: 35vw;
-  border-radius: 16px;
-  transform: translateX(0) scale(1);
-  z-index: 30; /* lo ponemos encima momentáneamente para evitar parpadeos */
-  transition:
-    transform 1.05s cubic-bezier(0.19, 1, 0.22, 1),
-    width 1.05s cubic-bezier(0.19, 1, 0.22, 1),
-    height 1.05s cubic-bezier(0.19, 1, 0.22, 1),
-    border-radius 0.9s ease,
-    box-shadow 0.6s ease;
-}
 
 
 /* --- BOTONES DEL CARRUSEL --- */
@@ -224,7 +144,7 @@ padding-right: 40%;
 
   display: flex;
   gap: 8px;
-z-index: 1;
+  z-index: 1;
 }
 
 .btn_project {
@@ -239,12 +159,12 @@ z-index: 1;
   transition: all 0.3s ease;
   backdrop-filter: blur(6px);
   background-color: #1B122F;
-    background: linear-gradient(180deg, #B489C2, #fc7979);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-color: transparent;
- font-family:var(--Fuente);
+  background: linear-gradient(180deg, #B489C2, #fc7979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: var(--Fuente);
 }
 
 .btn_project:hover {
@@ -252,22 +172,22 @@ color: transparent;
   transform: scale(1.2);
 }
 
-.botones_style{
-    position: absolute;
+.botones_style {
+  position: absolute;
   bottom: 150px;
   left: 46%;
   border-radius: 15px;
   background-color: #1B122F;
   width: 180px;
   height: 60px;
-display: flex;
-align-items: center;
-justify-content: center;
- z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
 }
 
-.btn_project_Y{
-    width: 60px;
+.btn_project_Y {
+  width: 60px;
   height: 45px;
   border: none;
   border-radius: 50%;
@@ -279,11 +199,160 @@ justify-content: center;
   backdrop-filter: blur(6px);
   background-color: #1B122F;
   background: linear-gradient(180deg, #B489C2, #fc7979);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-color: transparent;
- font-family:var(--Fuente);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: var(--Fuente);
 
 }
 
+
+.container_carrousel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 7%;
+  align-items: center;
+  justify-content: center;
+}
+.slider-container:hover {
+  transform: scale(1);
+    border-radius: 16px;
+  /* aumenta tamaño ligeramente */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  /* sombra más visible */
+}
+/* Reiniciamos el contador en el contenedor */
+.slider-container {
+  z-index: 10;
+  position: relative;
+  width: 59%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  width: 60vw;
+  height: 32vw;
+  background: linear-gradient(135deg, #190C40, #30175D);
+  border-radius: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  object-fit: fill;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  /* transición suave */
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide:hover {
+  transform: scale(1.05);
+    border-radius: 16px;
+  /* aumenta tamaño ligeramente */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  /* sombra más visible */
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .slider-container {
+    width: 95%;
+    height: 210px;
+  }
+
+  .slide {
+    aspect-ratio: 4/3;
+    height: 205px;
+  }
+
+  .slider-btn {
+    font-size: 24px;
+    padding: 8px 12px;
+  }
+
+  .main_project {
+  width: 100%;
+  height: 70vh;
+  background-color: var(--ColorPrimary);
+  position: relative;
+}
+
+.container_carrousel {
+
+  padding-top: 55%;
+
+}
+
+#img_top_project-tuerca {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  width: 160px;
+  height: 300px;
+  top: -100px;
+  left: 33%;
+  /* Animación */
+  animation: rotar 9s linear infinite;
+}
+
+#img_down_project {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.container_project_ef{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  
+}
+.container_project_ef> :nth-child(1) {
+font-size: 65px;
+}
+.container_project_ef> :nth-child(2) {
+font-size: 25px;
+padding-left: 25px;
+}
+
+}
+
+/* Responsivo */

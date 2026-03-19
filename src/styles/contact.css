@@ -1,9 +1,9 @@
-
 .main_contact{
     background-color: var(--ColorPrimary);
     width: 100%;
     height: 130vh;
     position: relative;
+    overflow: hidden;
 }
 
 .image-self{
@@ -20,6 +20,7 @@
     width: 100%;
     position: absolute;
     bottom: -5px;
+    z-index: 1000;
 }
 
 .Cave-rocks-down-contact{
@@ -139,26 +140,27 @@ flex-direction: row;
     width: 50%;
     height: 100%;
 
-    padding-left: 6px;
+
     display: flex;
     align-items: center;
 }
 .inputuno{
-margin-top: 10px;
-width: 100%;
-height: 35px;
-border-radius: 5px;
-background-color: var(--ColorFeatureConectDiv);
-border-color: #ffffffd0;
-padding-left: 15px;
-font-family: var(--Fuente);
-color: var(--ColorLettersWhiteDif);
-outline: none; 
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--ColorFeatureConectDiv);
+    border-color: #ffffffd0;
+    padding-left: 15px;
+    font-family: var(--Fuente);
+    color: var(--ColorLettersWhiteDif);
+
+    outline: none; 
 }
 
 label{
 margin-bottom: 30px;
-margin-left: px;
+
 background: linear-gradient(180deg, #B489C2, #fc7979);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -503,4 +505,141 @@ color: transparent;
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+/* CELULAR */
+@media (max-width: 767px) {
+
+  .main_contact {
+    width: 100%;
+    min-height: 1550px;
+
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  /* FONDO */
+  .image-self {
+    width: 120%;
+    min-height: 1550px;
+    object-fit: cover;
+    filter: blur(3px);
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+
+  /* TÍTULO */
+  .Title-Contact {
+    font-size: clamp(45px, 8vw, 50px);
+    top: 3.5%;
+    left: 67%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+  }
+
+  /* FORMULARIO CONTENEDOR */
+  .ContainerForm {
+    width: 95%;
+    flex-direction: column;
+    top: 130px;
+    left: 10px;
+    gap: 10px;
+    position: absolute;
+    z-index: 100;
+    transform: none; /* ya no centramos con absolute */
+
+  }
+
+   /* COLUMNAS apiladas */
+  .leftSide,
+  .rightSide {
+    width: 85%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* FORMULARIOS */
+  .realForm {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .formContainer {
+    gap: 8px;
+  }
+
+  /* Inputs reducidos proporcionalmente */
+  .fistForm {
+    flex-direction: column;
+    gap: 8px;
+    height: 400px;
+  }
+
+  .fistForm > div {
+    width: 100%;
+
+  }
+
+  .inputuno { width: 100%; height: 30px; font-size: 14px; }
+  .inputdos { width: 100%; height: 45px; font-size: 14px; }
+  .inputtres { width: 100%; height: 90px; font-size: 14px; }
+
+  /* Botón más pequeño */
+  #buttomsend {
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+  }
+
+  /* Sección conect */
+  .conect {
+    height: 120px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .titleC { font-size: 15px; }
+
+  .logoC {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .logo1,
+  .logo2,
+  .logo3 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo1 img,
+  .logo2 img,
+  .logo3 img {
+    width: 20px;
+    height: 20px;
+  }
+
+/* INFO & FEATURES optimizado */
+.Features{
+    height: auto;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+.leftSide{
+
+justify-content: space-around;
+}
+
+.Cave-rocks-down-contact{
+    width: 180%;
+    position: absolute;
+    bottom: 2px;    
+}
+
 }

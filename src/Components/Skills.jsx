@@ -29,8 +29,10 @@ const Skills = () => {
 
   return (
     <main className="main_skills">
+
+
       <div className="skills_container">
-        {/* Frontend */}
+       {/* Frontend */}
         <div ref={(el) => (sectionsRef.current[0] = el)} className="skills1">
           <div className="C_skills1">
             <div className="C_skills1_one">
@@ -85,11 +87,7 @@ const Skills = () => {
                 </div>
                 <div className="c_skill3_container_one">
                   <div className="m_pic">
-                    <img
-                      className="three"
-                      src="../Assets/Iconskills/three.js.png"
-                      alt=""
-                    />
+
                   </div>
                   <p>ThreeJs</p>
                 </div>
@@ -220,15 +218,19 @@ const Skills = () => {
           </div>
         </div>
       </div>
-
-      <h1 className="name_skills">Steven Blanco</h1>
-      <h1 className="proffesion_skills">Software Developer</h1>
+<div className="skills_header">
+  <h1 className="name_skills">Steven Blanco</h1>
+  <h1 className="proffesion_skills">Software Developer</h1>
+</div>
       <img id="img_top_skills" src="../Assets/Cave/Separete-Cav.svg" alt="" />
       <img
         className="image-background-skills"
         src="../Assets/Backgrounds/Background-Cave.svg"
         alt=""
       />
+
+
+
       <img id="img_down_skills" src="../Assets/Cave/Separete-Cav.svg" alt="" />
       <img id="pc" src="../Assets/Cave/Pc.svg" alt="" />
     </main>

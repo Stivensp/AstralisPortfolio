@@ -8,7 +8,10 @@ const Contact = () =>{
         <div className="image">
             <img className="image-self" src="..\Assets\Backgrounds\Background-Cave.svg" alt="" />
         </div>
-        <div className="ContainerForm">
+
+
+
+         <div className="ContainerForm">
             <div className="leftSide">
 
                 <div className="realForm">
@@ -174,6 +177,13 @@ const Contact = () =>{
                 </div>           
             </div>
         </div>
+
+
+
+
+
+
+
 
 
 
